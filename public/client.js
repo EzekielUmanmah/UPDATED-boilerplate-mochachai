@@ -95,9 +95,9 @@ utils.ready(function() {
       div.innerHTML = '<p>Loading...</p>';
       utils.ajax(options, function(err, res) {
         if(err) return console.log(err);
-        div.innerHTML = '<p>first name: <span id="name">' + res.name + '</span><p>' +
-          '<p>last name: <span id="surname">' + res.surname + '</span><p>' +
-          '<p>dates: <span id="dates">' + res.dates + '</span><p>';
+        div.innerHTML = '<p>first name: <span id="name">' + res.name + '</span></p>' +
+          '<p>last name: <span id="surname">' + res.surname + '</span></p>' +
+          '<p>dates: <span id="dates">' + res.dates + '</span></p>';
       });
     }
   });
